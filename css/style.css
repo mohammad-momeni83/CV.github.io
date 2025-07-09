@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.header {
+    background: url(../image/header-test-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 6vw;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.nav-bar-items {
+    color: #fff;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    cursor: pointer;
+}
+
+.nav-bar-name {
+    height: 100%;
+    margin-right: 25vw;
+    font-family: "My Soul";
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-items li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    padding: 0 1.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-bar-items li:hover {
+    color: black;
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.5);
+}
